@@ -4,32 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=ABeeZee|Anton|Baloo+Da"
+      rel="stylesheet"
+    />
     <link href="css/index.css" rel="stylesheet" />
     <title>Bubl</title>
   </head>
   <body>
     <!-- main navigation -->
-    <nav>
-      <ul>
-        <a href="index.html" class="brand"><img src="" alt="bubl brand"/></a>
-        <li><a href="#about"></a>Our Story</li>
-        <li><a href="#contact"></a>Contact</li>
+    <nav class="main_nav">
+      <div class="brand_only">
+        <a href="index.html" class="brand"
+          ><img
+            id="nav_brand"
+            src="assets/PNG/INDIVIDUAL/brand.png"
+            alt="bubl brand"
+        /></a>
+      </div>
+      <ul class="main_nav_ul">
+        <li><a href="#about">Find Your School</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a id="login_link" href="#login">Login</a></li>
+        <li id="li_sign_up_btn"><a id="a_sign_up_btn" href="#">Sign Up</a></li>
+        <div class="top_right_bubbles">
+          <img
+            id="topRightBubbles"
+            src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
+            alt="bubbles "
+          />
+        </div>
       </ul>
     </nav>
     <!-- all section contains everything, except nav and footer. this will be a scrollable "SPA" type site -->
     <section id="all">
       <!-- about section -->
       <section id="about">
-        <h1>Our Story</h1>
+        <!-- <h1>Our Story</h1> -->
       </section>
       <!-- contact section -->
       <section id="contact">
-        <h1>Contact</h1>
+        <!-- <h1>Contact</h1> -->
       </section>
     </section>
+
     <!-- footer section -->
     <footer id="footer">
-      Footer
+      <!-- <h3>Footer</h3> -->
     </footer>
   </body>
 </html>
