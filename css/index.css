@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #e67474;
+  padding-top: 61px;
+  background: #0098b3;
+}
