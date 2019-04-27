@@ -9,11 +9,90 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: @white_text;
-  background: @body_bg;
-  height: 100vh;
+  background-image: @body_bg;
+  background-attachment: fixed;
+
   font-family: 'ABeeZee', sans-serif;
 }
 
-#all {
-  padding: 2rem;
+li {
+  list-style: none;
+}
+
+// CSS for Call To Action Section (CTA)
+#cta {
+  // background: @brightgreen;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .col {
+    text-align: center;
+  }
+  .message {
+    // background: @brightgreen;
+    margin-left: 50px;
+    padding-left: 150px;
+  }
+
+  .baloo_da {
+    font-family: 'Baloo Da', cursive;
+    font-size: 2.25rem;
+    display: block;
+    // background: @brightgreen;
+  }
+
+  span {
+    line-height: 1.25;
+  }
+  #find {
+    padding-left: 80px;
+  }
+  #have {
+    padding-right: 120px;
+  }
+  #grow {
+    padding-left: 80px;
+  }
+
+  #bublBrandImage {
+    padding: 10px 0 30px 0;
+    display: block;
+    width: 100%;
+  }
+
+  .ctaSignUpBtn {
+    display: block;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @white_text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid @blue_border;
+    border-radius: 50px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+  }
+
+  .ctaSignUpBtn:hover {
+    color: @white_text;
+    background: linear-gradient(270deg, #00e6ff 14.17%, #00a3ff 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    text-shadow: none;
+  }
+
+  #kids {
+    // background: @brightgreen;
+    max-width: 475px;
+    margin-right: 90px;
+  }
+}
+
+// CSS for section .bubblesAcross
+.bubblesAcross {
+  // background: @brightgreen;
+  min-height: 200px;
+  background-image: url('../assets/PNG/INDIVIDUAL/bottom_bubbles.png');
 }
