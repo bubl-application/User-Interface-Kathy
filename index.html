@@ -11,7 +11,7 @@
     <link href="css/index.css" rel="stylesheet" />
     <title>Bubl</title>
   </head>
-  <body>
+  <body id="bodyBg">
     <!-- main navigation -->
     <nav class="main_nav">
       <div class="brand_only">
@@ -40,24 +40,45 @@
     <!-- all section contains everything, except nav and footer. this will be a scrollable "SPA" type site -->
     <section id="all">
       <section id="cta">
-        <div class="col message bublBg">
-          <span class="msgH1 baloo_da" id="find">find friends</span>
-          <span class="msgH1 baloo_da" id="have">have fun</span>
-          <span class="msgH1 baloo_da" id="grow">grow your</span>
+        <div class="col message bublImgs">
+          <!-- <span class="find baloo_da" id="friends">find friends</span>
+          <span class="have baloo_da" id="fun">have fun</span>
+          <span class="grow baloo_da" id="your">grow your</span> -->
+          <span class="find baloo_da" id="friends"
+            >find friends
+            <img
+              id="findImg"
+              src="assets/PNG/INDIVIDUAL/indv_smaller.png"
+              alt=""
+            />
+          </span>
+          <span class="have baloo_da" id="fun">
+            <img
+              id="haveImg"
+              src="assets/PNG/INDIVIDUAL/indv_smaller.png"
+              alt=""
+            />
+            have fun
+          </span>
+          <span class="grow baloo_da" id="your"
+            >grow your
+            <img
+              id="growImg"
+              src="assets/PNG/INDIVIDUAL/indv_smaller.png"
+              alt=""
+            />
+          </span>
           <img
             id="bublBrandImage"
             src="assets/PNG/INDIVIDUAL/bubl.png"
             alt="bubl brand image"
           />
-          <a class="ctaSignUpBtn" href="#">Sign Up</a> <br>
+          <a class="ctaSignUpBtn" href="#">Sign Up</a> <br />
           <a class="ctaSignUpBtn" href="#">Login</a>
         </div>
         <div class="col image">
           <img id="kids" src="assets/PNG/INDIVIDUAL/kids.png" alt="" />
-        </div>        
-      </section>
-      <section class="bubblesAcross">
-          <!-- <img id="bottomBubbles" src="assets/PNG/INDIVIDUAL/bottom_bubbles.png" alt="" /> -->
+        </div>
       </section>
       <!-- about section -->
       <section id="about">
