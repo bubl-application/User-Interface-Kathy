@@ -82,6 +82,15 @@ li {
   max-width: 475px;
   margin-right: 90px;
 }
+.navGuide {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.navGuide .fas {
+  color: #33ff00;
+  animation: bobbleLeft 3s infinite;
+}
 .bubbleContainer {
   display: flex;
   flex-wrap: wrap;
