@@ -7,40 +7,27 @@
 
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
   color: @white_text;
   background: @body_bg;
   background-attachment: fixed;
   font-family: 'ABeeZee', sans-serif;
 }
 
-// #bodyBg {
-//   width: 1260px;
-//   margin: 0 auto;
-// }
-
 li {
   list-style: none;
 }
 
-// CSS for Call To Action Section (CTA)
+// CSS for main Call To Action Section (CTA)
 #cta {
-  // background: @brightgreen;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  // background: url('../assets/PNG/INDIVIDUAL/bigBubbles.png') no-repeat;
-  // background-size: contain;
-  // background-position: 0 95%;
-  // padding-bottom: 220px;
 
   .col {
     text-align: center;
   }
 
   .message {
-    // background: @brightgreen;
-    // margin-left: 50px;
     padding-left: 100px;
   }
 
@@ -48,11 +35,9 @@ li {
     font-family: 'Baloo Da', cursive;
     font-size: 2.25rem;
     display: block;
-    // background: @brightgreen;
   }
 
   #findImg {
-    // background: @brightgreen;
     position: absolute;
     z-index: 1;
     left: 32%;
@@ -62,88 +47,27 @@ li {
   }
 
   #haveImg {
-    // background: @brightgreen;
     position: absolute;
     z-index: 2;
     left: 7%;
     top: 220px;
     transform: rotate(-25deg);
-    animation: bobbleRight 3s infinite;
+    animation: bobbleLeft 3s infinite;
   }
 
   #growImg {
-    // background: @brightgreen;
     position: absolute;
     z-index: 3;
     left: 35%;
-    top: 280px;
+    top: 290px;
     transform: rotate(-5deg);
-    animation: bobbleRight 3s infinite;
+    animation: bobbleLeft 3s infinite;
   }
-
-  // span {
-  //   line-height: 1.25;
-  // }
-  // #friends {
-  //   padding-left: 80px;
-  // }
-  // #fun {
-  //   padding-right: 120px;
-  // }
-  // #your {
-  //   padding-left: 80px;
-  // }
-
-  // .find {
-  //   position: absolute;
-  //   z-index: 1;
-  //   background: rgb(144, 196, 238);
-  //   width: 25%;
-  //   left: 18%;
-  //   top: 160px;
-  //   height: 4em;
-  //   padding: 18px 0px 0px 0px;
-  //   background: url('../assets/PNG/INDIVIDUAL/indv_smaller.png') no-repeat;
-  //   background-position: -1% -140%;
-  //   padding-top: 30px;
-  //   // background-color: rgb(0, 163, 255, 0.5);
-  //   // background-size: contain;
-  //   // margin-bottom: 2em;
-  //   // margin-top: 2em;
-  // }
-  // .have {
-  //   position: absolute;
-  //   z-index: 3; /* put .gold-box above .green-box and .dashed-box */
-  //   // background: gold;
-  //   width: 25%;
-  //   left: 18%;
-  //   top: 240px;
-  //   height: 4em;
-  // background: url('../assets/PNG/INDIVIDUAL/indv_smaller.png') no-repeat;
-  //   background-position: 80% -140%;
-  //   padding-top: 30px;
-  //   // margin-bottom: 6em;
-  // }
-  // .grow {
-  //   position: absolute;
-  //   z-index: 2; /* put .green-box above .dashed-box */
-  //   // background: lightgreen;
-  //   // opacity: 0.9;
-  //   width: 25%;
-  //   left: 18%;
-  //   top: 320px;
-  //   height: 4em;
-  //   background: url('../assets/PNG/INDIVIDUAL/indv_smaller.png') no-repeat;
-  //   background-position: -1% -140%;
-  //   padding-top: 30px;
-  //   // margin-bottom: 6em;
-  // }
 
   #bublBrandImage {
     padding: 10px 0 30px 0;
     display: block;
     width: 100%;
-    // margin-top: 230px;
   }
 
   .ctaSignUpBtn {
@@ -169,8 +93,67 @@ li {
   }
 
   #kids {
-    // background: @brightgreen;
     max-width: 475px;
     margin-right: 90px;
+  }
+}
+// Bubbles at the bottom of landing page
+.bubbleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  animation: bobbleOther 3s infinite;
+  @keyframes bobbleOther {
+    0% {
+      transform: translateX(20px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateX(20px);
+    }
+  }
+}
+
+// About section
+
+#about {
+  .ourStoryHeader {
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 60px;
+
+    .innerH1s {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .mainPara {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+
+  .images {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .profilePics {
+      width: 150px;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    col-7 {
+      text-align: center;
+      font-size: 24px;
+    }
   }
 }
