@@ -10,3 +10,8 @@ This repository will serve as the landing page and about us section of the appli
 - [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
 - [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
 - [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+
+
+# My notes
+
+When working on nav or any other element that I want to apply a dropdown on mouse hover effect, the only thing that will really matter in how the CSS affects the program is having a position of relative on the # ul > li element
