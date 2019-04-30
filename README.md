@@ -14,4 +14,6 @@ This repository will serve as the landing page and about us section of the appli
 
 # My notes
 
-When working on nav or any other element that I want to apply a dropdown on mouse hover effect, the only thing that will really matter in how the CSS affects the program is having a position of relative on the # ul > li element
+When working on nav or any other element that I want to apply a dropdown on mouse hover effect, the only thing that will really matter in how the CSS affects the program is having a position of relative on the 
+#  ul > li 
+element...
