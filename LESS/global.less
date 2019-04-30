@@ -7,11 +7,9 @@
 
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
   color: @white_text;
-  background-image: @body_bg;
+  background: @body_bg;
   background-attachment: fixed;
-
   font-family: 'ABeeZee', sans-serif;
 }
 
@@ -19,9 +17,8 @@ li {
   list-style: none;
 }
 
-// CSS for Call To Action Section (CTA)
+// CSS for main Call To Action Section (CTA)
 #cta {
-  // background: @brightgreen;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -29,30 +26,42 @@ li {
   .col {
     text-align: center;
   }
+
   .message {
-    // background: @brightgreen;
-    margin-left: 50px;
-    padding-left: 150px;
+    padding-left: 100px;
   }
 
   .baloo_da {
     font-family: 'Baloo Da', cursive;
     font-size: 2.25rem;
     display: block;
-    // background: @brightgreen;
   }
 
-  span {
-    line-height: 1.25;
+  #findImg {
+    position: absolute;
+    z-index: 1;
+    left: 32%;
+    top: 150px;
+    transform: rotate(-35deg);
+    animation: bobbleRight 3s infinite;
   }
-  #find {
-    padding-left: 80px;
+
+  #haveImg {
+    position: absolute;
+    z-index: 2;
+    left: 7%;
+    top: 220px;
+    transform: rotate(-25deg);
+    animation: bobbleLeft 3s infinite;
   }
-  #have {
-    padding-right: 120px;
-  }
-  #grow {
-    padding-left: 80px;
+
+  #growImg {
+    position: absolute;
+    z-index: 3;
+    left: 35%;
+    top: 290px;
+    transform: rotate(-5deg);
+    animation: bobbleLeft 3s infinite;
   }
 
   #bublBrandImage {
@@ -84,15 +93,67 @@ li {
   }
 
   #kids {
-    // background: @brightgreen;
     max-width: 475px;
     margin-right: 90px;
   }
 }
+// Bubbles at the bottom of landing page
+.bubbleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
-// CSS for section .bubblesAcross
-.bubblesAcross {
-  // background: @brightgreen;
-  min-height: 200px;
-  background-image: url('../assets/PNG/INDIVIDUAL/bottom_bubbles.png');
+  animation: bobbleOther 3s infinite;
+  @keyframes bobbleOther {
+    0% {
+      transform: translateX(20px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateX(20px);
+    }
+  }
+}
+
+// About section
+
+#about {
+  .ourStoryHeader {
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 60px;
+
+    .innerH1s {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .mainPara {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+
+  .images {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .profilePics {
+      width: 150px;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    col-7 {
+      text-align: center;
+      font-size: 24px;
+    }
+  }
 }

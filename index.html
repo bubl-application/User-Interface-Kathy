@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=ABeeZee|Anton|Baloo+Da"
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" />
     <title>Bubl</title>
   </head>
-  <body>
+  <body id="bodyBg">
     <!-- main navigation -->
     <nav class="main_nav">
       <div class="brand_only">
@@ -40,28 +46,149 @@
     <!-- all section contains everything, except nav and footer. this will be a scrollable "SPA" type site -->
     <section id="all">
       <section id="cta">
-        <div class="col message bublBg">
-          <span class="msgH1 baloo_da" id="find">find friends</span>
-          <span class="msgH1 baloo_da" id="have">have fun</span>
-          <span class="msgH1 baloo_da" id="grow">grow your</span>
+        <div class="col message bublImgs">
+          <!-- <span class="find baloo_da" id="friends">find friends</span>
+          <span class="have baloo_da" id="fun">have fun</span>
+          <span class="grow baloo_da" id="your">grow your</span> -->
+          <span class="find baloo_da" id="friends"
+            >find friends
+            <img
+              id="findImg"
+              src="assets/PNG/INDIVIDUAL/indv_smaller.png"
+              alt=""
+            />
+          </span>
+          <span class="have baloo_da" id="fun">
+            <img
+              id="haveImg"
+              src="assets/PNG/INDIVIDUAL/indv_smaller.png"
+              alt=""
+            />
+            have fun
+          </span>
+          <span class="grow baloo_da" id="your"
+            >grow your
+            <img
+              id="growImg"
+              src="assets/PNG/INDIVIDUAL/indv_smaller.png"
+              alt=""
+            />
+          </span>
           <img
             id="bublBrandImage"
             src="assets/PNG/INDIVIDUAL/bubl.png"
             alt="bubl brand image"
           />
-          <a class="ctaSignUpBtn" href="#">Sign Up</a> <br>
+          <a class="ctaSignUpBtn" href="#">Sign Up</a> <br />
           <a class="ctaSignUpBtn" href="#">Login</a>
         </div>
         <div class="col image">
           <img id="kids" src="assets/PNG/INDIVIDUAL/kids.png" alt="" />
-        </div>        
+        </div>
       </section>
-      <section class="bubblesAcross">
-          <!-- <img id="bottomBubbles" src="assets/PNG/INDIVIDUAL/bottom_bubbles.png" alt="" /> -->
-      </section>
+
+      <!-- Animated Nav Guide -->
+      <div
+        class="navGuide"
+        style="display: flex; justify-content: center; margin-top: 10px;"
+      >
+        <i class="fas fa-arrow-down fa-2x"></i>
+      </div>
+
+      <!-- Bubbles Divs -->
+      <div class="bubbleContainer">
+        <div class="bubbleBoxes">
+          <img id="kids" src="assets/PNG/INDIVIDUAL/indv_smaller.png" alt="" />
+        </div>
+        <div class="bubbleBoxes">
+          <img
+            id="kids"
+            src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
+            alt=""
+          />
+        </div>
+        <div class="bubbleBoxes">
+          <img id="kids" src="assets/PNG/INDIVIDUAL/indv_smaller.png" alt="" />
+        </div>
+        <div class="bubbleBoxes">
+          <img
+            id="kids"
+            src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
+            alt=""
+          />
+        </div>
+      </div>
+
       <!-- about section -->
       <section id="about">
-        <!-- <h1>Our Story</h1> -->
+        <div class="ourStoryHeader">
+          <h1 class="innerH1s">Our Story</h1>
+          <p class="mainPara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+            sapiente? Numquam libero officia, voluptatum, non placeat recusandae
+            quae nulla qui magni ipsam minima sint. Quos id alias possimus ut
+            magnam?
+          </p>
+        </div>
+
+        <div class="images">
+          <div class="col col-1">
+            <img
+              class="profilePics"
+              src="assets/PNG/TEAM/Group 31carlos.png"
+              alt=""
+            />
+            <h4>Carlos</h4>
+          </div>
+          <div class="col col-2">
+            <img
+              class="profilePics"
+              src="assets/PNG/TEAM/Group 30kathy.png"
+              alt=""
+            />
+            <h4>Kathy</h4>
+          </div>
+          <div class="col col-3">
+            <img
+              class="profilePics"
+              src="assets/PNG/TEAM/Group 34adam.png"
+              alt=""
+            />
+            <h4>Adam</h4>
+          </div>
+          <div class="col col-4">
+            <img
+              class="profilePics"
+              src="assets/PNG/TEAM/Group 29edgar.png"
+              alt=""
+            />
+            <h4>Edgar</h4>
+          </div>
+          <div class="col col-5">
+            <img
+              class="profilePics"
+              src="assets/PNG/TEAM/Group 32izzy.png"
+              alt=""
+            />
+            <h4>Izzy</h4>
+          </div>
+          <div class="col col-6">
+            <img
+              class="profilePics"
+              src="assets/PNG/TEAM/Group 35julian.png"
+              alt=""
+            />
+            <h4>Julian</h4>
+          </div>
+          <div class="col col-7">
+            <img
+              class="profilePics"
+              src="assets/PNG/TEAM/Group 33andrew.png"
+              alt=""
+            />
+            <h4>Andrew</h4>
+          </div>
+        </div>
       </section>
       <!-- contact section -->
       <section id="contact">
