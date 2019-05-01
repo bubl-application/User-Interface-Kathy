@@ -11,6 +11,8 @@ body {
   background: @body_bg;
   background-attachment: fixed;
   font-family: 'ABeeZee', sans-serif;
+  scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 li {
@@ -113,7 +115,7 @@ li {
     background: linear-gradient(270deg, #00e6ff 20%, #33ff00 100%);
   }
 
-  #kids {
+  .kids {
     max-width: 475px;
     margin-right: 90px;
   }
@@ -151,20 +153,19 @@ li {
     }
   }
 
-  .bubbleBoxes {
-    margin-top: -8%;
-  }
+  // .bubbleBoxes {
+  //   margin-top: -8%;
+  // }
 }
 
 // About section
-#about {
-  height: 800px;
+#aboutAll {
+  height: 500px;
+
   .centered {
     text-align: center;
     margin: 0 auto;
     width: 800px;
-    // margin-top: 60px;
-    padding-top: 60px;
 
     .innerH1s {
       font-size: 36px;
@@ -182,7 +183,7 @@ li {
     justify-content: space-evenly;
 
     .profilePics {
-      width: 150px;
+      width: 100px;
     }
 
     .col-1,
@@ -198,8 +199,9 @@ li {
   }
 }
 
-#contact {
-  height: 800px;
+#contactAll {
+  height: 500px;
+  
   .centered {
     text-align: center;
     margin: 0 auto;
