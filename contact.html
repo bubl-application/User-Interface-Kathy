@@ -15,88 +15,254 @@
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" />
+    <script src="./components/Dropdown/Dropdown.js" async></script>
     <title>Bubl | Contact</title>
   </head>
 
-  <body>
+  <body id="contactBody">
     <!-- main navigation -->
     <nav class="main_nav">
-        <div class="brand_only">
-          <a href="index.html" class="brand"
-            ><img
-              id="nav_brand"
-              src="assets/PNG/INDIVIDUAL/brand.png"
-              alt="bubl brand"
-          /></a>
-        </div>
-        <!-- nav links -->
-        <ul class="main_nav_ul">
-            <li><a href="#">Find Your School</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          <li><a id="login_link" href="#login">Login</a></li>
-          <li><a class="a_sign_up_btn" href="#">Sign Up</a></li>
-          <div class="top_right_bubbles">
-            <img
-              id="topRightBubbles"
-              src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
-              alt="bubbles "
-            />
-          </div>
-        </ul>
-      </nav>
-
-      <!-- contact section -->
-      <section id="contactAll">
-          <div class="centered">
-            <h1 class="innerH1s">Contact Us</h1>
-            <p class="mainPara">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-              sapiente? Numquam libero officia, voluptatum, non placeat recusandae
-              quae nulla qui magni ipsam minima sint. Quos id alias possimus ut
-              magnam?
-            </p>
-          </div>
-          <!-- Animated Nav Guide -->
-          <div class="navGuide">
-            <a href="#contact" class="btn"
-              ><i class="fas fa-arrow-circle-down fa-2x"></i
-            ></a>
-          </div>
-        </section>
-
-            <!-- Bubbles Divs -->
-    <div class="bubbleContainer">
-        <div class="bubbleBoxes">
-          <img
-            class="indvBubls"
-            src="assets/PNG/INDIVIDUAL/indv_smaller.png"
-            alt=""
-          />
-        </div>
-        <div class="bubbleBoxes">
-          <img
-            class="indvBubls"
-            src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
-            alt=""
-          />
-        </div>
-        <div class="bubbleBoxes">
-          <img
-            class="indvBubls"
-            src="assets/PNG/INDIVIDUAL/indv_smaller.png"
-            alt=""
-          />
-        </div>
-        <div class="bubbleBoxes">
-          <img
-            class="indvBubls"
-            src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
-            alt=""
-          />
-        </div>
+      <div class="brand_only">
+        <a href="index.html" class="brand"
+          ><img
+            id="nav_brand"
+            src="assets/PNG/INDIVIDUAL/brand.png"
+            alt="bubl brand"
+        /></a>
       </div>
-        <!-- end section #allContact -->
-      </section>
+      <!-- nav links -->
+      <ul class="main_nav_ul">
+        <li><a href="about.html">About Bubl</a></li>
+        <li><a href="contact.html" class="activeLink">The Team</a></li>
+        <li><a href="#">Schools</a></li>
+        <li><a id="login_link" href="index.html">Login</a></li>
+        <li><a class="a_sign_up_btn" href="#">Sign Up</a></li>
+        <div class="top_right_bubbles">
+          <img
+            id="topRightBubbles"
+            src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
+            alt="bubbles "
+          />
+        </div>
+      </ul>
+    </nav>
+
+    <!-- contact section -->
+    <section id="contactAll">
+      <div class="centered">
+        <h1 class="innerH1s">Meet The Team</h1>
+        <p class="mainPara">
+          These are the great folks on the Bubl team that made this app a
+          reality. We made it with love and had a ton of fun too. Some of us are
+          parents, others aren't. But we all remember what it felt like when it
+          was time to go to a new school, new teachers, new kids, and all the
+          new <em>work</em> ! So we made Bubl to help you out a little
+          (hopefully a lot!)
+        </p>
+      </div>
+    </section>
+
+    <!-- MEET THE TEAM AREA  -->
+    <nav class="holder">
+      <div class="dropdownBg">
+        <span class="arrow"></span>
+      </div>
+
+      <ul class="awesomeness">
+        <li>
+          <figure>
+            <a href="#">
+              <!-- profile pic -->
+              <img
+                class="profilePicture"
+                src="assets/PNG/TEAM/Group 36Carlos.png"
+                alt=""
+            /></a>
+            <figcaption class="figCaption">Team Lead</figcaption>
+          </figure>
+          <!-- div dropdown -->
+          <div class="dropdown dropdown1">
+            <div class="bio">
+              <p>
+                👨🏻‍💻Hi, I'm Carlos.<br />
+                Welcome to Bubl! Every good team needs a leader, and I'm him. I
+                used to be a Marine so no funny business, got it?!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <figure>
+            <a href="#">
+              <!-- profile pic -->
+              <img
+                class="profilePicture"
+                src="assets/PNG/TEAM/Group 30kathy.png"
+                alt=""
+            /></a>
+            <figcaption class="figCaption">UI Dev</figcaption>
+          </figure>
+          <!-- div dropdown -->
+          <div class="dropdown dropdown1">
+            <!-- stuff inside dropdown -->
+            <div class="bio">
+              <p>
+                👩🏽‍💻Hi, I'm Kathy. <br />
+                Welcome to Bubl! I made everthing you're seeing and interacting
+                with. Let me know what you think of the design! Oh, and don't
+                forget to SIGN UP!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <figure>
+            <a href="#">
+              <!-- profile pic -->
+              <img
+                class="profilePicture"
+                src="assets/PNG/TEAM/Group 34adam.png"
+                alt=""
+            /></a>
+            <figcaption class="figCaption">Front End Dev</figcaption>
+          </figure>
+          <!-- div dropdown -->
+          <div class="dropdown dropdown1">
+            <div class="bio">
+              <p>
+                👨🏼‍💻Hi, I'm Adam. <br />
+                Welcome to Bubl! I created the Front End with one of the coolest
+                technologies around - REACT! (It's the same thing that Facebook
+                is made of), cool right!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <figure>
+            <a href="#">
+              <!-- profile pic -->
+              <img
+                class="profilePicture"
+                src="assets/PNG/TEAM/Group 29edgar.png"
+                alt=""
+            /></a>
+            <figcaption class="figCaption">Front End Dev</figcaption>
+          </figure>
+          <!-- div dropdown -->
+          <div class="dropdown dropdown1">
+            <div class="bio">
+              <p>
+                👨🏻‍💻Hi, I'm Edgar. <br />
+                Welcome to Bubl! I created the Front End with one of the coolest
+                technologies around - REACT! (It's the same thing that Facebook
+                is made of), cool right!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <figure>
+            <a href="#">
+              <!-- profile pic -->
+              <img
+                class="profilePicture"
+                src="assets/PNG/TEAM/Group 37Izzy.png"
+                alt=""
+            /></a>
+            <figcaption class="figCaption">UI Dev</figcaption>
+          </figure>
+          <!-- div dropdown -->
+          <div class="dropdown dropdown1">
+            <div class="bio">
+              <p>
+                👨🏻‍💻Hi, I'm Izzy. <br />
+                Welcome to Bubl! I made everthing you're seeing and interacting
+                with. Let me know what you think of the design! Oh, and don't
+                forget to SIGN UP!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <figure>
+            <a href="#">
+              <!-- profile pic -->
+              <img
+                class="profilePicture"
+                src="assets/PNG/TEAM/Group 35julian.png"
+                alt=""
+            /></a>
+            <figcaption class="figCaption">UI Dev</figcaption>
+          </figure>
+          <!-- div dropdown -->
+          <div class="dropdown dropdown1">
+            <div class="bio">
+              <p>
+                👨🏼‍💻Hi, I'm Julian. <br />
+                Welcome to Bubl! I made everthing you're seeing and interacting
+                with. Let me know what you think of the design! Oh, and don't
+                forget to SIGN UP!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <figure>
+            <a href="#">
+              <!-- profile pic -->
+              <img
+                class="profilePicture"
+                src="assets/PNG/TEAM/Group 33andrew.png"
+                alt=""
+            /></a>
+            <figcaption class="figCaption">Back End Dev</figcaption>
+          </figure>
+          <!-- div dropdown -->
+          <div class="dropdown dropdown1">
+            <div class="bio">
+              <p>
+                👨🏻‍💻Hi, I'm Andrew. <br />
+                Welcome to Bubl! If it weren't for me, you wouldn't have a list
+                of schools to pick or anywhere for your Bubls to live, guess I'm
+                pretty important, right? Have fun kiddos!
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Bubbles Divs -->
+    <div class="bubbleContainer">
+      <div class="bubbleBoxes">
+        <img
+          class="indvBubls"
+          src="assets/PNG/INDIVIDUAL/indv_smaller.png"
+          alt=""
+        />
+      </div>
+      <div class="bubbleBoxes">
+        <img
+          class="indvBubls"
+          src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
+          alt=""
+        />
+      </div>
+      <div class="bubbleBoxes">
+        <img
+          class="indvBubls"
+          src="assets/PNG/INDIVIDUAL/indv_smaller.png"
+          alt=""
+        />
+      </div>
+      <div class="bubbleBoxes">
+        <img
+          class="indvBubls"
+          src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
+          alt=""
+        />
+      </div>
+    </div>
   </body>
 </html>

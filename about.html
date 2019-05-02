@@ -15,10 +15,11 @@
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" />
+    <script src="./components/Dropdown/Dropdown.js" async></script>
     <title>Bubl | About</title>
   </head>
 
-  <body>
+  <body id="aboutBody">
     <!-- main navigation -->
     <nav class="main_nav">
       <div class="brand_only">
@@ -31,10 +32,10 @@
       </div>
       <!-- nav links -->
       <ul class="main_nav_ul">
-        <li><a href="#">Find Your School</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a id="login_link" href="#login">Login</a></li>
+        <li><a href="about.html" class="activeLink">About Bubl</a></li>
+        <li><a href="contact.html">The Team</a></li>
+        <li><a href="#">Schools</a></li>
+        <li><a id="login_link" href="index.html">Login</a></li>
         <li><a class="a_sign_up_btn" href="#">Sign Up</a></li>
         <div class="top_right_bubbles">
           <img
@@ -46,77 +47,33 @@
       </ul>
     </nav>
 
-    <!-- 
-      aboutAll section contains everything, except nav and footer
-    -->
+    <!-- about page -->
     <section id="aboutAll">
       <div class="centered">
-        <h1 class="innerH1s">Our Story</h1>
+        <h1 class="innerH1s">About Bubl</h1>
         <p class="mainPara">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-          sapiente? Numquam libero officia, voluptatum, non placeat recusandae
-          quae nulla qui magni ipsam minima sint. Quos id alias possimus ut
-          magnam?
+          Bubl is a social app for elementary school students transitioning to
+          middle school. We get it. It's tough! What will you wear? Will you see
+          old friends,? Make new ones? And the teachers and schedules and
+          clubs... it can get super overwhelming. But we thought of you when we
+          made it. <br />
+          Bubl is a place where you can do all of those things we mentioned and
+          more! Sign up, pick your school, find your old friends, create Bubl
+          groups on common interests & activities, then make new friends! All in
+          all Bubl's gonna help you live your best middle school life!
         </p>
-      </div>
-
-      <div class="images">
-        <div class="col col-1">
-          <img
-            class="profilePics"
-            src="assets/PNG/TEAM/Group 36Carlos.png"
-            alt=""
-          />
-          <h4>Carlos</h4>
-        </div>
-        <div class="col col-2">
-          <img
-            class="profilePics"
-            src="assets/PNG/TEAM/Group 30kathy.png"
-            alt=""
-          />
-          <h4>Kathy</h4>
-        </div>
-        <div class="col col-3">
-          <img
-            class="profilePics"
-            src="assets/PNG/TEAM/Group 34adam.png"
-            alt=""
-          />
-          <h4>Adam</h4>
-        </div>
-        <div class="col col-4">
-          <img
-            class="profilePics"
-            src="assets/PNG/TEAM/Group 29edgar.png"
-            alt=""
-          />
-          <h4>Edgar</h4>
-        </div>
-        <div class="col col-5">
-          <img
-            class="profilePics"
-            src="assets/PNG/TEAM/Group 37Izzy.png"
-            alt=""
-          />
-          <h4>Izzy</h4>
-        </div>
-        <div class="col col-6">
-          <img
-            class="profilePics"
-            src="assets/PNG/TEAM/Group 35julian.png"
-            alt=""
-          />
-          <h4>Julian</h4>
-        </div>
-        <div class="col col-7">
-          <img
-            class="profilePics"
-            src="assets/PNG/TEAM/Group 33andrew.png"
-            alt=""
-          />
-          <h4>Andrew</h4>
-        </div>
+        <video
+          class="siteVideos"
+          src="assets/VIDEOS/720p.mp4"
+          poster="assets/PNG/INDIVIDUAL/Group 39poster.png"
+          width="720"
+          height="420"
+          preload
+          controls
+          loop
+        >
+          <p>Get in the know. Bubl is HERE!</p>
+        </video>
       </div>
     </section>
 

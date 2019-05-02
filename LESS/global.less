@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -11,8 +12,9 @@ body {
   background: @body_bg;
   background-attachment: fixed;
   font-family: 'ABeeZee', sans-serif;
-  scroll-behavior: smooth;
-  overflow: hidden;
+  #indexBody {
+    overflow: hidden;
+  }
 }
 
 li {
@@ -160,8 +162,6 @@ li {
 
 // About section
 #aboutAll {
-  height: 500px;
-
   .centered {
     text-align: center;
     margin: 0 auto;
@@ -172,50 +172,36 @@ li {
       margin-bottom: 20px;
     }
     .mainPara {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.5;
     }
-  }
 
-  .images {
-    margin: 60px 0px 60px 0px;
-    display: flex;
-    justify-content: space-evenly;
-
-    .profilePics {
-      width: 100px;
+    .siteVideos {
+      margin-top: 40px;
     }
 
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4,
-    .col-5,
-    .col-6,
-    .col-7 {
-      text-align: center;
-      font-size: 24px;
+    .siteVideos:focus {
+      outline: none;
+      outline-color: transparent !important;
+      outline-style: hidden;
+      outline-width: 0px;
     }
   }
 }
 
 #contactAll {
-  height: 500px;
-  
   .centered {
     text-align: center;
     margin: 0 auto;
     width: 800px;
-    // margin-top: 60px;
-    padding-top: 60px;
 
     .innerH1s {
       font-size: 36px;
       margin-bottom: 20px;
     }
     .mainPara {
-      font-size: 18px;
-      line-height: 1.5;
+      font-size: 16px;
+      line-height: 1.75;
     }
   }
 }
