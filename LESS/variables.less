@@ -20,10 +20,105 @@
   #873eff
 );
 
-@whiteish: #fff;
+@whiteish: #ffffffc7;
 @skybluish: #00e6ff;
 @indigoish: #2e008f;
 @purpleish: #873eff;
 @brightgreenish: #33ff00;
 @seablueish: #5af3fd;
 @purplyblueish: #5a61fd;
+
+/* Media Queries */
+/* for main landing page - Styles only in effect when screen is above 600px */
+@media (min-width: 600px) {
+  #main .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #section-c {
+    .content-wrap {
+      grid-column: 2 e('/') 4;
+    }
+  }
+
+  #main #section-d {
+    padding: 0;
+    background: transparent;
+
+    .box {
+      grid-column: span 2;
+      min-width: 220px;
+    }
+
+    .box {
+      .content-title {
+        font-family: 'Baloo Da', cursive;
+      }
+      img {
+        display: inline-block;
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+} // end NEW media query
+
+/* 
+Media Query for BIG screen main landing page - Styles only in effect when 
+screen is above 600px 
+*/
+@media (min-width: 600px) {
+  #aboutBody {
+    margin: 0 auto;
+
+    /* Section C */
+    #section-about {
+      text-align: center;
+      background: transparent;
+      color: @white_text;
+      padding: 2em;
+
+      .centered {
+        video {
+          margin-top: 30px;
+          width: 720px;
+          height: auto;
+        }
+        .mainPara {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+} // end NEW media query
+
+@media (min-width: 600px) {
+  #theTeamBody{
+    margin: 0 auto;
+
+    /* Section C */
+    #section-contact {
+      text-align: center;
+      background: transparent;
+      color: @white_text;
+
+      .innerH1s {
+        padding: 20px;
+      }
+
+      .centered {
+        .mainPara {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+} // end NEW media query
+
+

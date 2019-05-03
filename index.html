@@ -5,123 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      href="https://fonts.googleapis.com/css?family=ABeeZee|Anton|Baloo+Da"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=ABeeZee|Anton|Baloo+Da"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
     <link href="css/index.css" rel="stylesheet" />
 
     <title>Bubl | Home</title>
   </head>
 
-  <body id="indexBody">
-    <!-- main navigation -->
-    <nav class="main_nav">
-      <div class="brand_only">
-        <a href="index.html" class="brand"
+  <body class="text-center" id="indexBody">
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="#"
           ><img
-            id="nav_brand"
             src="assets/PNG/INDIVIDUAL/brand.png"
-            alt="bubl brand"
+            height="90"
+            alt="brand image"
         /></a>
-      </div>
-      <!-- nav links -->
-      <ul class="main_nav_ul">
-        <li><a href="about.html">About Bubl</a></li>
-        <li><a href="contact.html">The Team</a></li>
-        <li><a href="#">Schools</a></li>
-        <li><a id="login_link" href="index.html">Login</a></li>
-        <li><a class="a_sign_up_btn" href="#">Sign Up</a></li>
-        <div class="top_right_bubbles">
-          <img
-            id="topRightBubbles"
-            src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
-            alt="bubbles "
-          />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Bubl</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">The Team</a>
+            </li>
+            <li class="nav-item dropdown text-center">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Schools
+              </a>
+              <div
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="#">School 1</a>
+                <a class="dropdown-item" href="#">School 2</a>
+                <a class="dropdown-item" href="#">School 3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link login-link" href="#">Login</a>
+            </li>
+          </ul>
+          <a class="btn" id="signup-Nav" href="#">Signup</a>
         </div>
-      </ul>
+      </div>
     </nav>
 
-    <!-- all id section contains everything on landing page, except nav -->
-    <section id="all">
-      <!-- cta id section -->
-      <section id="cta">
-        <div class="col message bublImgs">
-          <span class="find baloo_da" id="friends"
-            >find friends
-            <img
-              id="findImg"
-              src="assets/PNG/INDIVIDUAL/indv_smaller.png"
-              alt=""
-            />
-          </span>
-          <span class="have baloo_da" id="fun">
-            <img
-              id="haveImg"
-              src="assets/PNG/INDIVIDUAL/indv_smaller.png"
-              alt=""
-            />
-            have fun
-          </span>
-          <span class="grow baloo_da" id="your"
-            >grow your
-            <img
-              id="growImg"
-              src="assets/PNG/INDIVIDUAL/indv_smaller.png"
-              alt=""
-            />
-          </span>
-          <img
-            id="bublBrandImage"
-            src="assets/PNG/INDIVIDUAL/bubl.png"
-            alt="bubl brand image"
-          />
-          <a class="ctaSignUpBtn" href="#">Sign Up</a> <br />
-          <a class="ctaSignUpBtn loginBtn" href="#">Login</a>
+    <!--Main Area-->
+    <main id="main">
+      <!--Section D-->
+      <section id="section-d" class="grid">
+        <div class="box">
+          <h2 class="content-title">find friends</h2>
+          <h2 class="content-title">have fun</h2>
+          <h2 class="content-title">grow your</h2>
+          <a href="#" class="btn" id="sign-up">signup</a>
+          <a href="#" class="btn" id="log-in">login</a>
         </div>
-        <div class="col image">
-          <img class="kids" src="assets/PNG/INDIVIDUAL/kids.png" alt="" />
+        <div class="box">
+          <img src="assets/PNG/INDIVIDUAL/kids.png" alt="" />
         </div>
-        <!-- cta section end -->
       </section>
+    </main>
 
-      <!-- Bubbles Divs -->
-      <div class="bubbleContainer">
-        <div class="bubbleBoxes">
-          <img
-            class="kids"
-            src="assets/PNG/INDIVIDUAL/indv_smaller.png"
-            alt=""
-          />
-        </div>
-        <div class="bubbleBoxes">
-          <img
-            class="kids"
-            src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
-            alt=""
-          />
-        </div>
-        <div class="bubbleBoxes">
-          <img
-            class="kids"
-            src="assets/PNG/INDIVIDUAL/indv_smaller.png"
-            alt=""
-          />
-        </div>
-        <div class="bubbleBoxes">
-          <img
-            class="kids"
-            src="assets/PNG/INDIVIDUAL/top_right_bubbles.png"
-            alt=""
-          />
-        </div>
-      </div>
-      <!-- end section #all -->
-    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
