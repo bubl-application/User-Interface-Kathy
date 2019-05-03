@@ -1,6 +1,6 @@
-// Code for dropdown functionality
+// Code for dropdowner functionality
 const triggers = document.querySelectorAll('.awesomeness > li');
-const background = document.querySelector('.dropdownBg');
+const background = document.querySelector('.dropdownerBg');
 const nav = document.querySelector('.holder');
 
 console.log(triggers);
@@ -14,15 +14,15 @@ function handleEnter() {
   );
   background.classList.add('open');
 
-  const dropdown = this.querySelector('.dropdown');
-  const dropdownCoords = dropdown.getBoundingClientRect();
+  const dropdowner = this.querySelector('.dropdowner');
+  const dropdownerCoords = dropdowner.getBoundingClientRect();
   const navCoords = nav.getBoundingClientRect();
 
   const coords = {
-    height: dropdownCoords.height,
-    width: dropdownCoords.width,
-    top: dropdownCoords.top - navCoords.top,
-    left: dropdownCoords.left - navCoords.left
+    height: dropdownerCoords.height,
+    width: dropdownerCoords.width,
+    top: dropdownerCoords.top - navCoords.top,
+    left: dropdownerCoords.left - navCoords.left
   };
 
   background.style.setProperty('width', `${coords.width}px`);
