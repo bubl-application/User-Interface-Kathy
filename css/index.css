@@ -1,9 +1,9 @@
 /* Media Queries */
 /* for main landing page - Styles only in effect when screen is above 600px */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   #main .grid {
     display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    grid-template-columns: 3fr repeat(3, minmax(auto, 21em)) 1fr;
     justify-items: center;
     align-items: center;
   }
@@ -12,27 +12,69 @@
   }
   #main #section-d {
     padding: 0;
-    background: transparent;
+    min-width: 960px;
+    margin: 0 auto;
   }
-  #main #section-d .box {
+  #main #section-d .box1 {
     grid-column: span 2;
-    min-width: 220px;
+    min-width: 520px;
+    min-height: 520px;
+    text-align: center;
+    position: relative;
+    left: 15%;
+    background: url('../assets/PNG/INDIVIDUAL/Group 45no_right_bubls.png') no-repeat;
+    background-position: top top;
+    background-size: contain;
+    padding: 60px 0 0 0;
+    animation: bobbleRight 6s infinite;
   }
-  #main #section-d .box .content-title {
+  @keyframes bobbleRight {
+    0% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateY(40px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+  #main #section-d .box1 .content-title {
     font-family: 'Baloo Da', cursive;
   }
-  #main #section-d .box img {
-    display: inline-block;
-    width: 75%;
+  #main #section-d .box1 .title-one:hover,
+  #main #section-d .box1 .title-two:hover,
+  #main #section-d .box1 .title-three:hover {
+    color: #5af3fd;
+    text-shadow: 1px 1px 3px #5af3fd;
+  }
+  #main #section-d .box2 {
+    grid-column: span 2;
+    margin-top: 2em;
+    padding: 3em 0;
+    background: url('../assets/PNG/INDIVIDUAL/Group\ 44bubbles_around.png');
+    background-position: right center;
+    background-size: cover;
+    position: relative;
+    top: -20px;
+    left: -10%;
+    animation: bobbleRight 6s infinite;
+  }
+  #main #section-d .box2 img {
+    display: block;
+    max-width: 75%;
     height: auto;
-    margin: 0 auto;
+    padding: 4em;
+    margin: 50px auto;
+    position: relative;
+    left: 14%;
   }
 }
 /* 
 Media Query for BIG screen main landing page - Styles only in effect when 
 screen is above 600px 
 */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   #aboutBody {
     margin: 0 auto;
     /* Section C */
@@ -53,23 +95,56 @@ screen is above 600px
     margin: 0 auto;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   #theTeamBody {
     margin: 0 auto;
     /* Section C */
   }
   #theTeamBody #section-contact {
     text-align: center;
-    background: transparent;
     color: #ffffffc7;
   }
-  #theTeamBody #section-contact .innerH1s {
-    padding: 20px;
+  #theTeamBody #section-contact .centered .innerH1s {
+    padding-top: 40px;
   }
   #theTeamBody #section-contact .centered .mainPara {
     max-width: 800px;
     margin: 0 auto;
   }
+  #theTeamBody .awesomeness > li {
+    padding: 0px 10px !important;
+  }
+  #theTeamBody .holder {
+    margin-top: 40px;
+  }
+  #theTeamBody .holder .flex {
+    display: flex;
+    flex-flow: row wrap !important;
+  }
+}
+.navbar a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffffc7 !important;
+  display: block;
+  margin: 0 1em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+li.nav-item.dropdown.text-center.show > div > a {
+  padding: 0;
+  margin: 0;
+  color: #2e008f !important;
+}
+.dropdown-menu {
+  background-color: #ffffffc7;
+}
+.signup-Nav {
+  display: block;
+  min-width: 160px;
+  margin: 0 auto;
+}
+li:nth-child(4) > a {
+  color: #5af3fd !important;
 }
 body {
   color: #ffffffc7;
@@ -127,52 +202,42 @@ body #main #section-c {
   padding: 2em;
 }
 body #main #section-d {
-  margin-top: 20px;
-  padding: 0px 0px 0px 0px;
-  background: transparent;
+  padding: 0;
   color: #ffffffc7;
 }
-body #main #section-d .box img {
+body #main #section-d .box1 {
+  grid-column: span 2;
+  text-align: center;
+  background: url('../assets/PNG/INDIVIDUAL/Group 45no_right_bubls.png') no-repeat;
+  background-position: top top;
+  background-size: contain;
+}
+body #main #section-d .box1 .content-title {
+  text-align: center;
+}
+body #main #section-d .box1 .title-one:hover,
+body #main #section-d .box1 .title-two:hover,
+body #main #section-d .box1 .title-three:hover {
+  color: #5af3fd;
+  text-shadow: 1px 1px 3px #5af3fd;
+}
+body #main #section-d .box2 img {
   display: inline-block;
-  width: 80%;
+  width: 100%;
   height: auto;
+  margin: 0 auto;
+  padding: 2em;
 }
 /* OLD OLD OLD OLD OLD OLD OLD OLD OLD OLD */
-/* ------------------------------------------------------------ */
-nav a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffffc7 !important;
-  display: block;
-  margin: 0 1em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-li.nav-item.dropdown.text-center.show > div > a {
-  padding: 0;
-  margin: 0;
-  color: #2e008f !important;
-}
-.dropdown-menu {
-  background-color: #ffffffc7;
-}
-#signup-Nav {
-  display: block;
-  min-width: 160px;
-  margin: 0 auto;
-}
-li:nth-child(4) > a {
-  color: #5af3fd !important;
-}
 #aboutBody {
-  margin: 0 auto;
   /* Section C */
 }
 #aboutBody #section-about {
-  margin-top: 0;
+  margin: 0 auto;
   text-align: center;
   background: transparent;
   color: #ffffffc7;
-  padding: 2em;
+  padding: 0 2em ;
 }
 #aboutBody #section-about video {
   margin-top: 30px;
@@ -180,16 +245,24 @@ li:nth-child(4) > a {
   height: auto;
 }
 #theTeamBody {
-  margin: 0 auto;
+  height: 100%;
   /* Section C */
+  /* used with / related to javascipt down below */
 }
 #theTeamBody #section-contact {
+  margin: 0 auto;
   text-align: center;
   background: transparent;
   color: #ffffffc7;
   padding: 0 2em;
 }
-.awesomeness > li > a {
+#theTeamBody #section-contact .centered .innerH1s {
+  padding-top: 20px;
+}
+#theTeamBody #section-contact .centered .mainPara {
+  padding-bottom: 50px;
+}
+#theTeamBody .awesomeness > li > a {
   color: yellow;
   text-decoration: none;
   font-size: 20px;
@@ -199,29 +272,29 @@ li:nth-child(4) > a {
   margin: 20px;
   border-radius: 5px;
 }
-nav ul {
+#theTeamBody nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
-.awesomeness > li {
+#theTeamBody .awesomeness > li {
   position: relative;
   display: flex;
   justify-content: center;
-  padding-left: 40px;
+  padding: 0px;
 }
-.awesomeness > li figure .profilePicture {
+#theTeamBody .awesomeness > li figure .profilePicture {
   width: 130px;
 }
-.awesomeness > li .figCaption {
+#theTeamBody .awesomeness > li .figCaption {
   text-align: center;
   padding-top: 20px;
   font-size: 18px;
   color: linear-gradient(to left bottom, #2e008f, #4410aa, #5a20c6, #702fe2, #873eff);
 }
-.dropdowner {
+#theTeamBody .dropdowner {
   opacity: 0;
   position: absolute;
   overflow: hidden;
@@ -229,21 +302,20 @@ nav ul {
   top: 100px;
   border-radius: 2px;
   transition: all 0.5s;
-  transform: translateY(100px);
+  transform: translateY(120px);
   will-change: opacity;
   display: none;
   z-index: 100;
 }
-/* used with / related to javascipt down below */
-.trigger-enter .dropdowner {
+#theTeamBody .trigger-enter .dropdowner {
   display: block;
 }
-.trigger-enter-active .dropdowner {
+#theTeamBody .trigger-enter-active .dropdowner {
   opacity: 1;
 }
-.dropdownerBg {
+#theTeamBody .dropdownerBg {
   width: 100px;
-  height: 100px;
+  height: auto;
   position: absolute;
   background: #fff;
   border-radius: 4px;
@@ -254,10 +326,10 @@ nav ul {
   justify-content: center;
   opacity: 0;
 }
-.dropdownerBg.open {
+#theTeamBody .dropdownerBg.open {
   opacity: 1;
 }
-.arrow {
+#theTeamBody .arrow {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -265,7 +337,7 @@ nav ul {
   background: white;
   transform: translateY(-50%) rotate(45deg);
 }
-.bio {
+#theTeamBody .bio {
   min-width: 200px;
   display: flex;
   flex-flow: wrap;
@@ -274,4 +346,11 @@ nav ul {
   line-height: 1.7;
   color: #2e008f;
   text-align: center;
+}
+#theTeamBody .holder .flex {
+  display: flex;
+  flex-flow: column wrap;
+}
+#theTeamBody .holder .flex .li-all figure {
+  margin-bottom: 260px;
 }

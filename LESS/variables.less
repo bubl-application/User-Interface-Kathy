@@ -30,10 +30,10 @@
 
 /* Media Queries */
 /* for main landing page - Styles only in effect when screen is above 600px */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   #main .grid {
     display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    grid-template-columns: 3fr repeat(3, minmax(auto, 21em)) 1fr;
     justify-items: center;
     align-items: center;
   }
@@ -46,22 +46,65 @@
 
   #main #section-d {
     padding: 0;
-    background: transparent;
+    min-width: 960px;
+    margin: 0 auto;
+    // background-image: url('../assets/PNG/INDIVIDUAL/bigBubbles.png');
 
-    .box {
+    .box1 {
       grid-column: span 2;
-      min-width: 220px;
-    }
+      min-width: 520px;
+      min-height: 520px;
+      text-align: center;
+      position: relative;
+      left: 15%;
+      background: url('../assets/PNG/INDIVIDUAL/Group 45no_right_bubls.png')
+        no-repeat;
+      background-position: top top;
+      background-size: contain;
+      padding: 60px 0 0 0;
+      animation: bobbleRight 6s infinite;
+      @keyframes bobbleRight {
+        0% {
+          transform: translateX(10px);
+        }
+        50% {
+          transform: translateY(40px);
+        }
+        100% {
+          transform: translateX(10px);
+        }
+      }
 
-    .box {
       .content-title {
         font-family: 'Baloo Da', cursive;
       }
+
+      .title-one:hover, .title-two:hover, .title-three:hover {
+        color: @seablue;
+        text-shadow: 1px 1px 3px @seablue;
+      }
+    }
+
+    .box2 {
+      grid-column: span 2;
+      margin-top: 2em;
+      padding: 3em 0;
+      background: url('../assets/PNG/INDIVIDUAL/Group\ 44bubbles_around.png');
+      background-position: right center;
+      background-size: cover;
+      position: relative;
+      top: -20px;
+      left: -10%;
+      animation: bobbleRight 6s infinite;
+
       img {
-        display: inline-block;
-        width: 75%;
+        display: block;
+        max-width: 75%;
         height: auto;
-        margin: 0 auto;
+        padding: 4em;
+        margin: 50px auto;
+        position: relative;
+        left: 14%;
       }
     }
   }
@@ -71,7 +114,7 @@
 Media Query for BIG screen main landing page - Styles only in effect when 
 screen is above 600px 
 */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   #aboutBody {
     margin: 0 auto;
 
@@ -97,28 +140,36 @@ screen is above 600px
   }
 } // end NEW media query
 
-@media (min-width: 600px) {
-  #theTeamBody{
+@media (min-width: 800px) {
+  #theTeamBody {
     margin: 0 auto;
 
     /* Section C */
     #section-contact {
       text-align: center;
-      background: transparent;
       color: @white_text;
 
-      .innerH1s {
-        padding: 20px;
-      }
-
       .centered {
+        .innerH1s {
+          padding-top: 40px;
+        }
         .mainPara {
           max-width: 800px;
           margin: 0 auto;
         }
       }
     }
+
+    .awesomeness > li {
+      padding: 0px 10px !important;
+    }
+
+    .holder {
+      margin-top: 40px;
+      .flex {
+        display: flex;
+        flex-flow: row wrap !important;
+      }
+    }
   }
 } // end NEW media query
-
-
