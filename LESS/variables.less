@@ -31,6 +31,14 @@
 /* Media Queries */
 /* for main landing page - Styles only in effect when screen is above 600px */
 @media (min-width: 800px) {
+  .navbar-brand img {
+    width: auto;
+    height: 80px;
+  }
+  .navbar-brand img:hover {
+    transform: scale3d(1.2, 1.2, 1.2) rotate(-10deg);
+  }
+
   #main .grid {
     display: grid;
     grid-template-columns: 3fr repeat(3, minmax(auto, 21em)) 1fr;
@@ -51,24 +59,24 @@
     // background-image: url('../assets/PNG/INDIVIDUAL/bigBubbles.png');
 
     .box1 {
-      grid-column: span 2;
-      min-width: 520px;
-      min-height: 520px;
+      width: 440px;
+      height: 440px;
       text-align: center;
       position: relative;
+      top: -20px;
       left: 15%;
-      background: url('../assets/PNG/INDIVIDUAL/Group 45no_right_bubls.png')
+      background: url('../assets/PNG/INDIVIDUAL/Group\ 45no_right_bubls.png')
         no-repeat;
-      background-position: top top;
+      background-position: top left;
       background-size: contain;
-      padding: 60px 0 0 0;
-      animation: bobbleRight 6s infinite;
+
+      animation: bobbleRight 7s infinite;
       @keyframes bobbleRight {
         0% {
           transform: translateX(10px);
         }
         50% {
-          transform: translateY(40px);
+          transform: translateY(30px);
         }
         100% {
           transform: translateX(10px);
@@ -79,9 +87,18 @@
         font-family: 'Baloo Da', cursive;
       }
 
-      .title-one:hover, .title-two:hover, .title-three:hover {
+      .title-one:hover,
+      .title-two:hover,
+      .title-three:hover {
         color: @seablue;
         text-shadow: 1px 1px 3px @seablue;
+      }
+
+      img#big-brand {
+        padding-top: 20px;
+        margin-bottom: 0px;
+        width: 200px;
+        height: auto;
       }
     }
 
@@ -89,7 +106,7 @@
       grid-column: span 2;
       margin-top: 2em;
       padding: 3em 0;
-      background: url('../assets/PNG/INDIVIDUAL/Group\ 44bubbles_around.png');
+      background: url('../assets/PNG/INDIVIDUAL/47bubbles_around.png');
       background-position: right center;
       background-size: cover;
       position: relative;
@@ -98,7 +115,7 @@
       animation: bobbleRight 6s infinite;
 
       img {
-        display: block;
+        display: inline-block;
         max-width: 75%;
         height: auto;
         padding: 4em;

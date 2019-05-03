@@ -71,10 +71,23 @@ body {
       .box1 {
         grid-column: span 2;
         text-align: center;
-        background: url('../assets/PNG/INDIVIDUAL/Group 45no_right_bubls.png')
-        no-repeat;
-      background-position: top top;
-      background-size: contain;
+        background: url('../assets/PNG/INDIVIDUAL/Group\ 46bubles_for_small.png')
+          no-repeat;
+        background-position: top top;
+        background-size: contain;
+        padding: 50px;
+        animation: bobbleRight 7s infinite;
+        @keyframes bobbleRight {
+          0% {
+            transform: translateX(10px);
+          }
+          50% {
+            transform: translateY(30px);
+          }
+          100% {
+            transform: translateX(10px);
+          }
+        }
 
         .content-title {
           text-align: center;
@@ -85,6 +98,13 @@ body {
         .title-three:hover {
           color: @seablue;
           text-shadow: 1px 1px 3px @seablue;
+        }
+
+        img#big-brand {
+          padding-top: 10px;
+          padding-bottom: 20px;
+          width: 180px;
+          height: auto;
         }
       }
 
