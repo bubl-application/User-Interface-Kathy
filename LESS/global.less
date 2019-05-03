@@ -1,4 +1,4 @@
-// These styles are for SMALL, when I'm viewing in Mobile/Responsive mode 
+// These styles are for SMALL, when I'm viewing in Mobile/Responsive mode
 
 // Styles for BIG are housed in variables.less
 
@@ -64,16 +64,37 @@ body {
 
     /* Section D */
     #section-d {
-      margin-top: 20px;
-      padding: 0px 0px 0px 0px;
-      background: transparent;
+      // margin-top: 20px;
+      padding: 0;
       color: @white_text;
 
-      .box {
+      .box1 {
+        grid-column: span 2;
+        text-align: center;
+        background: url('../assets/PNG/INDIVIDUAL/Group 45no_right_bubls.png')
+        no-repeat;
+      background-position: top top;
+      background-size: contain;
+
+        .content-title {
+          text-align: center;
+        }
+
+        .title-one:hover,
+        .title-two:hover,
+        .title-three:hover {
+          color: @seablue;
+          text-shadow: 1px 1px 3px @seablue;
+        }
+      }
+
+      .box2 {
         img {
           display: inline-block;
-          width: 80%;
+          width: 100%;
           height: auto;
+          margin: 0 auto;
+          padding: 2em;
           // margin-top: 20px;
         }
       }
@@ -261,181 +282,3 @@ body {
 //     }
 //   }
 // }
-
-/* ------------------------------------------------------------ */
-
-// @media all and (max-width: 800px) {
-//   body {
-//     #indexBody {
-//       // CSS for main Call To Action Section (CTA)
-//       #cta {
-//         overflow: initial;
-//         display: flex;
-//         flex-flow: column wrap;
-//         justify-content: center;
-//         align-items: center;
-
-//         .col {
-//           text-align: center;
-//         }
-
-//         .message {
-//           padding-left: 0;
-//         }
-
-//         .baloo_da {
-//           font-family: 'Baloo Da', cursive;
-//           font-size: 2.25rem;
-//           display: inline-block;
-//         }
-
-//         #findImg {
-//           position: static;
-//           z-index: initial;
-//           left: 0;
-//           top: 0;
-//           transform: rotate(-35deg);
-//           animation: bobbleRight 6s infinite;
-//         }
-
-//         #haveImg {
-//           position: static;
-//           z-index: initial;
-//           left: 0;
-//           top: 0;
-//           transform: rotate(-25deg);
-//           animation: bobbleLeft 6s infinite;
-//           @keyframes bobbleLeft {
-//             0% {
-//               transform: translateY(-10px);
-//             }
-//             50% {
-//               transform: translateX(20px);
-//             }
-//             100% {
-//               transform: translateY(-10px);
-//             }
-//           }
-//         }
-
-//         #growImg {
-//           position: static;
-//           z-index: initial;
-//           left: 0;
-//           top: 0;
-//           transform: rotate(-5deg);
-//           animation: bobbleRight 8s infinite;
-//         }
-
-//         #bublBrandImage {
-//           padding: 0;
-//           display: block;
-//           width: 100%;
-//         }
-
-//         .ctaSignUpBtn {
-//           display: block;
-//           padding: 0.5rem 3rem;
-//           text-transform: uppercase;
-//           text-decoration: none;
-//           color: @white_text;
-//           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//           border: 1px solid @blue_border;
-//           border-radius: 50px;
-//           font-family: 'Anton', sans-serif;
-//           letter-spacing: 2px;
-//           font-size: 1.2rem;
-//         }
-
-//         .ctaSignUpBtn:hover {
-//           color: @white_text;
-//           background: linear-gradient(270deg, #00e6ff 20%, #00a3ff 100%);
-//           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//           border: none;
-//           margin: 1px; // makes it not jumpy!
-//           text-shadow: none;
-//         }
-
-//         .loginBtn {
-//           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//           border: 1px solid @brightgreen;
-//         }
-
-//         .loginBtn:hover {
-//           background: linear-gradient(270deg, #00e6ff 20%, #33ff00 100%);
-//         }
-
-//         .kids {
-//           max-width: 475px;
-//           margin-right: 90px;
-//         }
-//       }
-
-//       // Bubbles at the bottom of landing page
-//       .bubbleContainer {
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: center;
-//         animation: bobbleOther 6s infinite;
-
-//         @keyframes bobbleOther {
-//           0% {
-//             transform: translateX(20px);
-//           }
-//           50% {
-//             transform: translateY(20px);
-//           }
-//           100% {
-//             transform: translateX(20px);
-//           }
-//         }
-//       }
-
-//       // About section
-//       #aboutAll {
-//         .centered {
-//           text-align: center;
-//           margin: 0 auto;
-//           width: 200px;
-
-//           .innerH1s {
-//             font-size: 36px;
-//             margin-bottom: 20px;
-//           }
-//           .mainPara {
-//             font-size: 16px;
-//             line-height: 1.5;
-//           }
-
-//           .siteVideos {
-//             margin-top: 40px;
-//           }
-
-//           .siteVideos:focus {
-//             outline: none;
-//             outline-color: transparent !important;
-//             outline-style: hidden;
-//             outline-width: 0px;
-//           }
-//         }
-//       }
-
-//       #contactAll {
-//         .centered {
-//           text-align: center;
-//           margin: 0 auto;
-//           width: 800px;
-
-//           .innerH1s {
-//             font-size: 36px;
-//             margin-bottom: 20px;
-//           }
-//           .mainPara {
-//             font-size: 16px;
-//             line-height: 1.75;
-//           }
-//         }
-//       }
-//     } // indexBody end
-//   } // body end
-// } // media query end
