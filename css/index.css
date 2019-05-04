@@ -187,6 +187,7 @@ body {
   background: linear-gradient(to left bottom, #2e008f, #4410aa, #5a20c6, #702fe2, #873eff);
   background-attachment: fixed;
   font-family: 'ABeeZee', sans-serif;
+  overflow-x: hidden;
   /* Main */
 }
 body h1,
@@ -283,7 +284,6 @@ body #main #section-d .box2 img {
   margin: 0 auto;
   padding: 2em;
 }
-/* OLD OLD OLD OLD OLD OLD OLD OLD OLD OLD */
 #aboutBody {
   /* Section C */
 }
