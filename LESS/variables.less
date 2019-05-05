@@ -1,4 +1,5 @@
-// Variables
+// Variables and
+// Tablets and Desktop styles for all pages
 
 // Color Pointers
 @body_bg: @deep_imagination;
@@ -29,7 +30,7 @@
 @purplyblueish: #5a61fd;
 
 /* Media Queries */
-/* for main landing page - Styles only in effect when screen is above 600px */
+/* for main landing page - Styles only in effect when screen is above 800px */
 @media (min-width: 800px) {
   .navbar-brand img {
     width: auto;
@@ -38,25 +39,21 @@
   .navbar-brand img:hover {
     transform: scale3d(1.2, 1.2, 1.2) rotate(-10deg);
   }
-
   #main .grid {
     display: grid;
     grid-template-columns: 3fr repeat(3, minmax(auto, 21em)) 1fr;
     justify-items: center;
     align-items: center;
   }
-
   #section-c {
     .content-wrap {
       grid-column: 2 e('/') 4;
     }
   }
-
   #main #section-d {
     padding: 0;
     min-width: 960px;
     margin: 0 auto;
-    // background-image: url('../assets/PNG/INDIVIDUAL/bigBubbles.png');
 
     .box1 {
       width: 440px;
@@ -82,18 +79,15 @@
           transform: translateX(10px);
         }
       }
-
       .content-title {
         font-family: 'Baloo Da', cursive;
       }
-
       .title-one:hover,
       .title-two:hover,
       .title-three:hover {
         color: @seablue;
         text-shadow: 1px 1px 3px @seablue;
       }
-
       img#big-brand {
         padding-top: 20px;
         margin-bottom: 0px;
@@ -101,7 +95,6 @@
         height: auto;
       }
     }
-
     .box2 {
       grid-column: span 2;
       margin-top: 2em;
@@ -125,11 +118,11 @@
       }
     }
   }
-} // end NEW media query
+} // end 1st NEW media query
 
 /* 
 Media Query for BIG screen main landing page - Styles only in effect when 
-screen is above 600px 
+screen is above 800px 
 */
 @media (min-width: 800px) {
   #aboutBody {
@@ -141,7 +134,6 @@ screen is above 600px
       background: transparent;
       color: @white_text;
       padding: 2em;
-
       .centered {
         video {
           margin-top: 30px;
@@ -155,17 +147,19 @@ screen is above 600px
       }
     }
   }
-} // end NEW media query
+} // end 2nd NEW media query
 
+/* 
+Media Query for BIG screen main landing page - Styles only in effect when 
+screen is above 800px 
+*/
 @media (min-width: 800px) {
   #theTeamBody {
     margin: 0 auto;
-
     /* Section C */
     #section-contact {
       text-align: center;
       color: @white_text;
-
       .centered {
         .innerH1s {
           padding-top: 40px;
@@ -176,11 +170,9 @@ screen is above 600px
         }
       }
     }
-
     .awesomeness > li {
       padding: 0px 10px !important;
     }
-
     .holder {
       margin-top: 40px;
       .flex {
@@ -189,4 +181,4 @@ screen is above 600px
       }
     }
   }
-} // end NEW media query
+} // end 3rd NEW media query
